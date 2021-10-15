@@ -1,0 +1,31 @@
+#section1 {
+    display: flex;
+    flex-direction: column;
+    border-color: red;
+    border-style: solid;
+}
+
+.header, #header-logo, .header-links, .text-and-button, .image {
+    display: flex;
+    border-style: solid;
+    border-color: blue;
+}
+
+.header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header-links {
+    list-style: none;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-and-button {
+    flex-direction: column;
+}
