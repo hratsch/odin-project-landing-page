@@ -1,14 +1,14 @@
-#section1, #section2 {
+#section1, #section2, #section3, #section4 {
     display: flex;
     flex-direction: column;
     border-color: red;
     border-style: solid;
+    padding: 0 7.5em 0 7.5em;
+    margin: 0;
 }
 
 .header, #header-logo, .header-links, .text-and-button, .image {
     display: flex;
-    border-style: solid;
-    border-color: blue;
 }
 
 .header {
@@ -17,17 +17,30 @@
     padding: 1rem;
 }
 
+#header-logo {
+    list-style: none;
+    font-size: 24px;
+}
+
 .header-links {
     list-style: none;
     gap: 10px;
+    font-size: 18px;
 }
 
-a {
+a, a:hover, a:focus, a:active {
     text-decoration: none;
+    color: inherit;
 }
 
 .text-and-button {
     flex-direction: column;
+    align-items: flex-start;
+}
+
+.image {
+    background-color: #6d747d;
+    text-align: center;
 }
 
 .square {
@@ -40,8 +53,6 @@ a {
 #square-group {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    border-style: dashed;
 }
 
 .sq-text, .sq-both {
@@ -63,4 +74,47 @@ a {
 
 h3 {
     text-align: center
+}
+
+#section1, #footer {
+    background-color: #1f2937;
+    color: white;
+}
+
+#section3 {
+    background-color: #e5e7eb
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    @font-face {
+        font-family: Hero;
+        src: local('Hero.otf') format('opentype');
+    }
+}
+
+#subsec1 {
+    border-style: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subseca {
+    display: flex;
+    border-style: groove;
+    height: 15em;
+    width: 30em;
+    word-break: break-word;
+}
+
+#subsecb {
+    display: flex;
+    justify-content: center;
+    border-style: ridge;
+    height: 15em;
+    width: 40em;
+    background-color: #6d747d;
+    align-items: center;
 }
